@@ -14,24 +14,17 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
     color: #333333;
-    line-height: 1.6;
+    background-color: #ffffff;
 }
 
-.contenedor {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+img {
+    max-width: 100%;
 }
 
 /* HEADER */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -40,9 +33,7 @@ header {
 }
 
 nav ul {
-    display: flex;
     list-style: none;
-    gap: 30px;
 }
 
 nav ul li a {
@@ -65,44 +56,30 @@ nav ul li a:hover {
 /* BANNER */
 
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fcf2f2;
     padding: 60px;
-    margin: 40px 0;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.banner-texto {
-    max-width: 50%;
-}
-
-.banner-texto h4 {
+.subtitulo {
     color: #d48fa3;
     text-transform: uppercase;
-    margin-bottom: 10px;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.banner-texto h1 {
+.titulo-principal {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.banner-texto p {
-    margin-bottom: 30px;
-    color: #555555;
+    font-size: 52px;
 }
 
 .btn-principal {
     background-color: #000000;
-    color: white;
-    padding: 12px 30px;
+    color: #ffffff;
     text-decoration: none;
+    padding: 12px 30px;
     border-radius: 30px;
-    font-size: 13px;
+    display: inline-block;
     transition: 0.3s;
 }
 
@@ -110,37 +87,19 @@ nav ul li a:hover {
     background-color: #333333;
 }
 
-.banner-imagen {
-    max-width: 45%;
-}
+/* TITULOS */
 
-.banner-imagen img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* TITULO */
-
-.destacados-titulo {
-    text-align: center;
-    margin: 60px 0 40px;
+.destacados-titulo,
+.titulo-seccion {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
 }
 
 /* PRODUCTOS */
 
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 80px;
-}
-
 .producto-card {
     background-color: #f8f1f1;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 15px;
+    padding: 30px 20px;
     text-align: center;
     transition: 0.3s;
 }
@@ -152,9 +111,9 @@ nav ul li a:hover {
 .producto-img-container {
     width: 160px;
     height: 160px;
-    margin: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin: auto;
     margin-bottom: 20px;
 }
 
@@ -170,12 +129,12 @@ nav ul li a:hover {
 }
 
 .producto-info p {
-    font-size: 14px;
     color: #666666;
+    font-size: 14px;
 }
 
 .precio {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     margin: 20px 0;
 }
@@ -183,9 +142,9 @@ nav ul li a:hover {
 .btn-comprar {
     background-color: #000000;
     color: #ffffff;
+    text-decoration: none;
     padding: 10px 25px;
     border-radius: 30px;
-    text-decoration: none;
     display: inline-block;
     transition: 0.3s;
 }
@@ -196,61 +155,14 @@ nav ul li a:hover {
 
 /* NOSOTROS */
 
-.nosotros-seccion {
-    padding: 80px 0;
-}
-
-.nosotros-contenido {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.nosotros-texto {
-    max-width: 50%;
-}
-
-.nosotros-texto h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.nosotros-texto p {
-    margin-bottom: 15px;
+#nosotros p {
     color: #555555;
-}
-
-.nosotros-img {
-    max-width: 45%;
-}
-
-.nosotros-img img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* BENEFICIOS */
 
 .beneficios-contenedor {
     background-color: #f6dbde;
-    padding: 70px 20px;
-}
-
-.beneficios-contenedor h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-family: 'Playfair Display', serif;
-}
-
-.beneficios-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
 }
 
 .beneficio-card {
@@ -260,13 +172,15 @@ nav ul li a:hover {
 .icono-caja {
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     margin: auto;
     margin-bottom: 20px;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
     font-size: 24px;
 }
 
@@ -282,43 +196,6 @@ nav ul li a:hover {
 
 /* CONTACTO */
 
-.contacto-seccion {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 0;
-    gap: 50px;
-}
-
-.contacto-imagen {
-    max-width: 45%;
-}
-
-.contacto-imagen img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.contacto-texto {
-    max-width: 45%;
-}
-
-.contacto-texto h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.contacto-texto p {
-    margin-bottom: 25px;
-}
-
-.contacto-detalles {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
 .contacto-item {
     font-size: 16px;
 }
@@ -326,64 +203,22 @@ nav ul li a:hover {
 /* FOOTER */
 
 footer {
-    text-align: center;
-    padding: 30px 0;
     border-top: 1px solid #eeeeee;
     color: #888888;
     font-size: 13px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE EXTRA */
 
-@media (max-width: 992px) {
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
+@media(max-width: 768px) {
 
     .banner {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .banner-texto,
-    .banner-imagen {
-        max-width: 100%;
-    }
-
-    .productos-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nosotros-contenido {
-        flex-direction: column;
-    }
-
-    .nosotros-texto,
-    .nosotros-img {
-        max-width: 100%;
+        padding: 40px 20px;
         text-align: center;
     }
 
-    .beneficios-grid {
-        grid-template-columns: 1fr;
+    .titulo-principal {
+        font-size: 38px;
     }
 
-    .contacto-seccion {
-        flex-direction: column;
-    }
-
-    .contacto-texto,
-    .contacto-imagen {
-        max-width: 100%;
-        text-align: center;
-    }
 }
