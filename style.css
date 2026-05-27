@@ -1,0 +1,389 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo-contenedor img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d48fa3;
+}
+
+.cart-icon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcf2f2;
+    padding: 60px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.banner-texto {
+    max-width: 50%;
+}
+
+.banner-texto h4 {
+    color: #d48fa3;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.banner-texto h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-texto p {
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.btn-principal {
+    background-color: #000000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #333333;
+}
+
+.banner-imagen {
+    max-width: 45%;
+}
+
+.banner-imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TITULO */
+
+.destacados-titulo {
+    text-align: center;
+    margin: 60px 0 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+/* PRODUCTOS */
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.producto-card {
+    background-color: #f8f1f1;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-img-container {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.producto-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-info h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.precio {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn-comprar {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #333333;
+}
+
+/* NOSOTROS */
+
+.nosotros-seccion {
+    padding: 80px 0;
+}
+
+.nosotros-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nosotros-texto {
+    max-width: 50%;
+}
+
+.nosotros-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+    margin-bottom: 15px;
+    color: #555555;
+}
+
+.nosotros-img {
+    max-width: 45%;
+}
+
+.nosotros-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* BENEFICIOS */
+
+.beneficios-contenedor {
+    background-color: #f6dbde;
+    padding: 70px 20px;
+}
+
+.beneficios-contenedor h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.beneficio-card {
+    text-align: center;
+}
+
+.icono-caja {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.beneficio-card h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.beneficio-card p {
+    color: #555555;
+    font-size: 14px;
+}
+
+/* CONTACTO */
+
+.contacto-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    gap: 50px;
+}
+
+.contacto-imagen {
+    max-width: 45%;
+}
+
+.contacto-imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contacto-texto {
+    max-width: 45%;
+}
+
+.contacto-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contacto-texto p {
+    margin-bottom: 25px;
+}
+
+.contacto-detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-item {
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #eeeeee;
+    color: #888888;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .banner-texto,
+    .banner-imagen {
+        max-width: 100%;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-contenido {
+        flex-direction: column;
+    }
+
+    .nosotros-texto,
+    .nosotros-img {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-seccion {
+        flex-direction: column;
+    }
+
+    .contacto-texto,
+    .contacto-imagen {
+        max-width: 100%;
+        text-align: center;
+    }
+}
